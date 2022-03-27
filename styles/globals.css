@@ -1,16 +1,31 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card {
+  display: grid;
+  grid-auto-flow: row;
+  background-color: yellow-32;
+  transform-style: preserve-3d;
+  transition: 1s cubic-bezier(0.25, 1, 0.5, 1);
+  
+  transform: perspective(1500px) rotateY(var(--rotate-y, 0)) translateY(var(--translate-y, 0));
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+
+.card.flip {
+  --rotate-y: 180deg;
 }
 
-* {
-  box-sizing: border-box;
+.card .front,
+.card .back {
+  position: fixed;
+  backface-visibility: hidden;
+  
+  
+  
+}
+
+.card .back {
+  transform: rotateY(180deg);
 }
