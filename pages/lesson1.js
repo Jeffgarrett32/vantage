@@ -1,10 +1,12 @@
 import React from 'react'
-import Image from 'next/image';
+import Image from 'next/Image';
 import CountUpAnimation from '../components/CountUpAnimation';
 import DonutChart from '../components/DonutChart';
 import Carousel from '../components/Carousel';
 import Flipcard from '../components/Flipcard';
 import Navlesson from '../components/Navlesson';
+import BarChart from '../components/BarChart';
+import PieChart from '../components/PieChart';
 
 function lesson1() {
   return (
@@ -15,7 +17,7 @@ function lesson1() {
         <div className="flex justify-center w-screen bg-repeat bg-[url(https://i.postimg.cc/mDZ8z7zy/Vector-3.png)]">
           
           <div className="grid grid-cols-2 grid-flow-row items-center bg-neutral-200 border-x border-black gap-6 w-5/6 justify-center">
-          <div className='flex w-full col-span-2 justify-center items-end justify-self-center'><img className="pt-10" src="/hackerCat.png" alt="arthere" width="320" height="360"/>
+          <div className='flex w-full col-span-2 justify-center items-end justify-self-center'><div className='pt-10'><Image className="pt-10" src="/hackerCat.png" alt="arthere" width="300" height="300"/></div>
             </div>
 
             <div className='flex w-5/6 items-center justify-self-center col-span-2 border-stone-32 border border-t-[0.5px] mb-6'></div>
@@ -117,6 +119,12 @@ function lesson1() {
             
             <div className='pt-4'>
             <Flipcard />
+            </div>
+            <div>
+                <BarChart/>
+            </div>
+            <div>
+                <PieChart/>
             </div>
             
 
