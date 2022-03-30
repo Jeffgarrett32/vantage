@@ -5,8 +5,7 @@ import DonutChart from '../components/DonutChart';
 import Carousel from '../components/Carousel';
 import Flipcard from '../components/Flipcard';
 import Navlesson from '../components/Navlesson';
-import BarChart from '../components/BarChart';
-import PieChart from '../components/PieChart';
+import GraphToggle from '../components/GraphToggle';
 
 function lesson1() {
   return (
@@ -117,14 +116,8 @@ function lesson1() {
             </div>
             <div className='col-span-2'>
             
-            <div className='pt-4'>
-            <Flipcard />
-            </div>
             <div>
-                <BarChart/>
-            </div>
-            <div>
-                <PieChart/>
+                <GraphToggle/>
             </div>
             
 

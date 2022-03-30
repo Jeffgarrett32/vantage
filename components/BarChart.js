@@ -20,15 +20,25 @@ import {
   );
 
   export const options = {
+    
+    indexAxis: 'y',
+    elements: {
+      bar: {
+        borderWidth: 2,
+      },
+    },
+    
     responsive: true,
     plugins: {
       legend: {
-        display: false,
+        display: true,
+        
       },
       title: {
         display: true,
-        text: 'Phishing over Previous Five Years - FBI',
+        text: 'Internet Crimes Report - FBI',
       },
+      
     },
   };
 
@@ -38,28 +48,37 @@ import {
     labels: ['2017', '2018', '2019', '2020', '2021'],
     datasets: [
       {
+        axis: 'y',
+        label: 'Reported Personal Data Breaches',
         Labels: ['2017','2018', '2019', '2020', '2021'],
-        data: [25344, 26739, 114702, 241342, 323972],
+        data: [30904, 50642, 38218, 45330, 51829],
         backgroundColor: [
-            'rgba(255, 170, 90, 0.8)',
-            'rgba(243, 202, 64, 0.8)',
-            'rgba(114, 112, 255, 0.8)',
-            'rgba(255, 120, 90, 0.8)',
-            'rgba(247, 237, 226, 0.8)',
+            '#3836A3',
+
 
         ],
         borderColor: [
-            'rgba(25, 25, 25, 0.8)',
-            'rgba(25, 25, 25, 0.8)',
-            'rgba(25, 25, 25, 0.8)',
-            'rgba(25, 25, 25, 0.8)',
-            'rgba(25, 25, 25, 0.8)',
+            '#7270FF',
           ],
           borderWidth: 2,
       },
+      {
+        axis: 'y',
+        label: 'Reported Phishing Incidents',
+        Labels: ['2017','2018', '2019', '2020', '2021'],
+        data: [25344, 26739, 114702, 241342, 323972],
+        backgroundColor: [
+            '#7270FF',
 
+        ],
+        borderColor: [
+            '#3836A3',
+          ],
+          borderWidth: 2,
+      },
     ],
   };
+
 
 function BarChart() {
   return (
