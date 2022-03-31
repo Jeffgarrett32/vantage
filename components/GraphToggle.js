@@ -29,7 +29,7 @@ function GraphToggle() {
     }
 
     return (
-        <div className='h-screen'>
+        <div className='py-10'>
         <div className='grid grid-cols-3 justify-items-center gap-10 px-14'>
             
             <button onClick={() => handleBar()}className="col-span-1 grid grid-rows-1 grid-cols-3  text-base font-medium font-jetbrains rounded-md bg-blue-32 border border-black py-4 px-4 w-full hover:animate-wiggle hover:drop-shadow-md focus:animate-wiggle focus:drop-shadow-md">
@@ -74,22 +74,22 @@ function GraphToggle() {
             
         </div>
         <div>
-        <div className='flex w-full h-90 justify-center items-start bg-neutral-200' >
+        <div className='flex w-full h-90 justify-center items-start bg-blue-16' >
          
-        <div className={`${showBar ?  'w-7/12 p-5' : 'hidden'} `}>
+        <div className={`${showBar ?  'w-8/12 p-5 pb-12' : 'hidden pb-12'} `}>
            <BarChart/>
            </div>
         </div>
-        <div className='flex w-full h-auto justify-center items-start bg-neutral-200' >
+        <div className='flex w-full h-90 justify-center items-start bg-blue-16' >
          
-        <div className={`${showPie ?  'w-7/12 p-5' : 'hidden'} `}>
+        <div className={`${showPie ?  'w-8/12 p-5 pb-12' : 'hidden pb-12'} `}>
            <LineChart/>
            </div>
         </div>
 
-        <div className='flex w-full h-auto justify-center items-start bg-neutral-200' >
+        <div className='flex w-full h-90 justify-center items-start bg-blue-16' >
          
-         <div className={`${showDonut ?  'w-4/12 px-5' : 'hidden'} `}>
+         <div className={`${showDonut ?  'w-4/12 px-5 pb-12' : 'hidden pb-12'} `}>
             <DonutChart />
             </div>
          </div>

@@ -9,8 +9,8 @@ function Carousel() {
   const [nav1, nav2] = useState();
 
     return (
-    <div className='w-2/5'>
-        <Slider className='pb-2 flex hover:cursor-pointer'
+    <div className='w-5/6'>
+        <Slider className='pb-2 flex hover:cursor-pointer h-96'
         asNavFor={nav1}
         slidesToShow={1}
         swipeToSlide={true}
@@ -20,11 +20,12 @@ function Carousel() {
         dots={true}
         adaptiveHeight={true}
         rows={1}
-        autoplay={false}
+        autoplay={true}
+        autoplaySpeed={5000}
         
         >
-            <div id="card1">
-            <div className="grid grid-rows-1 grid-cols-3 justify-self-center text-base font-medium font-jetbrains rounded-md bg-blue-32 border border-black py-4 px-4 h-auto">
+            <div id="card1" className='px-2'>
+            <div className="grid grid-rows-1 grid-cols-3 justify-self-center text-base font-medium font-jetbrains rounded-md bg-yellow-32 border border-black py-4 px-4 h-96">
               <div className="col-span-3 bg-neutral-100 border border-black rounded-md p-5 text-black">
                 {" "}
                 <p>
@@ -40,8 +41,8 @@ function Carousel() {
               </div>
             </div>
             </div>
-            <div id="card2">
-            <div className="grid grid-rows-1 grid-cols-3 justify-self-center text-base font-medium font-jetbrains rounded-md bg-yellow-32 border border-black py-4 px-4 h-auto">
+            <div id="card2" className='px-2'>
+            <div className="grid grid-rows-1 grid-cols-3 justify-self-center text-base font-medium font-jetbrains rounded-md bg-yellow-32 border border-black py-4 px-4 h-96">
               <div className="col-span-3 bg-neutral-100 border border-black rounded-md p-5 text-black">
                 {" "}
                 <p>
@@ -54,8 +55,8 @@ function Carousel() {
               </div>
             </div>
             </div>
-            <div id="card3">
-            <div className="grid grid-rows-1 grid-cols-3 justify-self-center text-base font-medium font-jetbrains rounded-md bg-rose-32 border border-black py-4 px-4 h-auto">
+            <div id="card3" className='px-2'>
+            <div className="grid grid-rows-1 grid-cols-3 justify-self-center text-base font-medium font-jetbrains rounded-md bg-yellow-32 border border-black py-4 px-4 h-96">
               <div className="col-span-3 bg-neutral-100 border border-black rounded-md p-5 text-black">
                 {" "}
                 <p>
@@ -68,8 +69,8 @@ function Carousel() {
               </div>
             </div>
             </div>
-            <div id="card2">
-            <div className="grid grid-rows-1 grid-cols-3 justify-self-center text-base font-medium font-jetbrains rounded-md bg-amber-32 border border-black py-4 px-4 h-auto">
+            <div id="card2" className='px-2'>
+            <div className="grid grid-rows-1 grid-cols-3 justify-self-center text-base font-medium font-jetbrains rounded-md bg-yellow-32 border border-black py-4 px-4 h-96">
               <div className="col-span-3 bg-neutral-100 border border-black rounded-md p-5 text-black">
                 {" "}
                 <p>

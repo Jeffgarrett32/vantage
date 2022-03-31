@@ -23,11 +23,13 @@ module.exports = {
     },
       colors: {
         blue: {
+          16: '#DFDEFF',
           32: '#7270FF',
           64: '#07004D',
         },
         yellow: {
-          32: '#F3CA40',
+          16: '#FFF4CD',
+          32: '#FFDE67',
         },
         stone: {
           32: '#D3D0CB',
@@ -41,6 +43,7 @@ module.exports = {
           32: '#FF785A'
         },
         amber: {
+          16: '#FFDEBF',
           32: '#FFAA5A'
         },
         purple: {

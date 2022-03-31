@@ -5,7 +5,7 @@ function Navlesson() {
   return (
     <nav className="bg-stone-32 border border-b-neutral-800">
       <div className="max-w-full mx-auto">
-        <div className="flex items-center justify-between py-3 px-5 w-full">
+        <div className="flex items-center justify-between py-4 px-5 w-full">
           <div className="flex items-center space-x-5">
             <img
               className="hover:cursor-pointer"

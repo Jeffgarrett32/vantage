@@ -37,6 +37,7 @@ export const options = {
       text: 'Incident Repsonse Grade by Size of Security Staff',
     },
   },
+  
   scales: {
     y: {
       type: 'linear',

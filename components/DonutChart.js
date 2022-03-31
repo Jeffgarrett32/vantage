@@ -11,13 +11,17 @@ export const options = {
     legend: {
       display: true,
       position: 'top',
-      padding: 10,
+      align: 'start',
+    },
+    layout: {
       
     },
+
     title: {
       display: true,
       text: 'Ransomware Victims by Company Revenue (%), Q4 2021',
-      padding: 10,
+      padding: 15,
+      align: 'center'
       
     },
     
