@@ -52,7 +52,7 @@ function FlipCard() {
 
     return (
         <div id='flipcard' className="flex justify-center p-4">
-        <div className={`grid grid-flow-row grid-cols-1 bg-amber-32 border border-black rounded-sm w-4/6 justify-self-end pt-4 px-4 pb-2 ${flip ? "card flip front" : "card back"} `} >
+        <div className={`grid grid-flow-row grid-cols-1 bg-amber-32 border border-black rounded-sm lg:w-3/6 w-4/6  justify-self-end pt-4 px-4 pb-2 ${flip ? "card flip front" : "card back"} `} >
         
         <div id="questionSide" className=''>
         <div id="question" className='grid grid-flow-row grid-cols-1 bg-neutral-100 border border-black rounded-t-md p-5 text-black text-md font-jetbrains justify-items-start mb-4'>

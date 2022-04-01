@@ -40,6 +40,7 @@ module.exports = {
           711: '#191919'
         },
         rose: {
+          16: '#FFC0B1',
           32: '#FF785A'
         },
         amber: {

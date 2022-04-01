@@ -22,7 +22,7 @@ function Navlesson() {
           </div>
 
           <div className="flex justify-end items-center px-3"> Streak Count: 0
-          <div className='pl-2 mt-1'><Image src="/token.svg" width={40} height={40} alt="token"/>
+          <div className='pl-2 mt-1'><Image src="/btokens.svg" width={40} height={40} alt="token"/>
           </div>
           </div>
         </div>
