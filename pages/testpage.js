@@ -3,12 +3,19 @@ import BarChart from '../components/BarChart'
 import DonutChart from '../components/DonutChart'
 import GraphToggle from '../components/GraphToggle'
 import LineChart from '../components/LineChart'
+import { useSpring, animated } from '@react-spring/web'
+import SpringTest from '../components/SpringTest'
+import DemoIntro from '../components/DemoIntro'
 
 function testpage() {
-  
-
     return (
-     <GraphToggle/>
+     <div className='flex items-center justify-center w-screen h-screen'>
+       <DemoIntro/>
+       <div>
+         <SpringTest/>
+       </div>
+     </div>
+     
   )
 }
 

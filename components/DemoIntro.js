@@ -1,8 +1,29 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Image from 'next/image';
 import CountUpAnimation from './CountUpAnimation';
+import { animated, useChain, useSpring, useSpringRef } from "@react-spring/web";
 
 function DemoIntro() {
+  
+  const [isIn, setIn] = useState(false);
+  const toggle = () => setIn((state) => !state);
+
+  const spring1Ref = useSpringRef();
+  const spring2Ref = useSpringRef();
+
+  const { xyz } = useSpring({
+      ref: spring1Ref,
+      xyz: isIn? [0, 0, 0] : [600, 0, 0],
+      config: { mass: 1.4}
+  });
+
+  const { background } = useSpring({
+      ref: spring2Ref,
+      background: isIn? "white" : "grey"
+  });
+
+  useChain(isIn ? [spring1Ref, spring2Ref] : [spring2Ref, spring1Ref]);
+
   return (
     <>
     <div className='flex justify-center'>
@@ -11,7 +32,7 @@ function DemoIntro() {
       </h1>
       </div>
       <div className='flex justify-center'>
-      <div className='grid grid-flow-row grid-cols-2 gap-4 justify-self-center w-full pt-8 '>
+      <div className='grid grid-flow-row grid-cols-2 gap-8 justify-self-center w-full pt-8 '>
           
       <div className="row-span-1 col-span-1 grid grid-rows-1 grid-cols-3 bg-yellow-32 border border-black rounded-md w-5/6 justify-self-end p-4 h-full min-h-64">
           <div className='col-span-3 bg-neutral-100 border border-black rounded-md p-5 text-black font-jetbrains'>
