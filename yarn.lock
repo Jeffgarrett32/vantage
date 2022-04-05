@@ -1420,7 +1420,7 @@
   "resolved" "https://registry.npmjs.org/@react-spring/types/-/types-9.4.4.tgz"
   "version" "9.4.4"
 
-"@react-spring/web@~9.4.4":
+"@react-spring/web@^9.4.4", "@react-spring/web@~9.4.4":
   "integrity" "sha512-iJmOLdhcuizriUlu/xqBc5y8KaFts+UI+iC+GxyTwBtzxA9czKiSAZW2ESuhG8stafa3jncwjfTQQp84KN36cw=="
   "resolved" "https://registry.npmjs.org/@react-spring/web/-/web-9.4.4.tgz"
   "version" "9.4.4"
