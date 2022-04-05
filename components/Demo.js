@@ -6,14 +6,15 @@ import Carousel from '../components/Carousel'
 import FlipCard from '../components/Flipcard'
 import DemoIntro from '../components/DemoIntro'
 import Button from '../components/Button';
+import SpringCarousel from './SpringCarousel'
 
 function Demo() {
-  const caseRef = useRef(null)
+  const caseRef = useRef(null) 
   return (
-    <div>
-      <Parallax pages={5} ref={caseRef} className="bg-neutral-100">
+    <div className=''>
+      <Parallax pages={5} ref={caseRef} className="h-full gradient">
         
-        <ParallaxLayer offset={0} factor={1} speed={.5} className=" bg-neutral-100">
+        <ParallaxLayer offset={0} factor={1} speed={.5} className="">
         <Navlesson />
         <DemoIntro />
         <div className='flex w-full  justify-center py-10 '>
@@ -23,7 +24,7 @@ function Demo() {
         </ParallaxLayer>
         
         
-        <ParallaxLayer ref={caseRef} offset={1} factor={1.1} speed={.5} className="justify-center bg-blue-16"
+        <ParallaxLayer ref={caseRef} offset={1} factor={1.1} speed={.5} className="justify-center "
         >
           <h1 className="flex justify-center pt-10 pb-2 text-5xl font-bold text-neutral-711">
             Real World Case Studies
@@ -36,12 +37,12 @@ function Demo() {
     </button>
     </div>
         </ParallaxLayer>
-        <ParallaxLayer offset={2} speed={.5} className="bg-yellow-16 ">
+        <ParallaxLayer offset={2} speed={.5} className=" ">
           <h1 className="flex justify-center pt-10 pb-2 text-5xl font-bold text-neutral-711">
             Phishing Techniques
           </h1>
           <div className='flex justify-center pt-10'>
-            <div className="grid grid-rows-1 grid-cols-3 justify-self-center text-lg font-medium font-jetbrains rounded-md bg-yellow-32 border border-black p-4 w-4/6 h-48">
+            <div className="grid grid-rows-1 grid-cols-3 justify-self-center text-lg font-medium font-mono rounded-md bg-yellow-32 border border-black p-4 w-4/6 h-48">
               <div className="col-span-3 bg-neutral-100 border border-black rounded-md p-5 text-black">
                 {" "}
                 As attackers grow more sophisticated, it can be difficult to
@@ -60,25 +61,21 @@ function Demo() {
     </button>
     </div>
         </ParallaxLayer>
-        <ParallaxLayer offset={3} factor={1.5} speed={.5} className="bg-amber-16">
+        <ParallaxLayer offset={3} factor={1.5} speed={.5} className="">
           
-          <h1 className="flex justify-center pt-10 pb-2 text-5xl font-bold text-neutral-711">
+          <h1 className="flex justify-center pt-10 pb-10 text-5xl font-bold text-neutral-711">
             Pop Quiz!
           </h1>
-          <div className='flex pt-10'>
-            <FlipCard/>
-          </div>
-          <div className='flex pt-10'>
-            <FlipCard/>
-          </div>
-          <div className='flex w-full justify-center space-x-5 py-10'>
+          <SpringCarousel/>
+
+          <div className='flex w-full justify-center space-x-5 py-14'>
         <button onClick={() => caseRef.current.scrollTo(2)} className= 'font-bold bg-neutral-100 p-3 w-1/6 rounded-md border border-black transition-colors duration-500 transform inline hover:bg-neutral-700  hover:text-white focus:shadow-lg hover:shadow-md text-center scale-105' type="submit"> Previous
     </button>
     <button onClick={() => caseRef.current.scrollTo(4)} className= 'font-bold bg-neutral-100 p-3 w-1/6 rounded-md border border-black transition-colors duration-500 transform inline hover:bg-neutral-700  hover:text-white focus:shadow-lg hover:shadow-md text-center scale-105' type="submit"> Next
     </button>
     </div>
         </ParallaxLayer>
-        <ParallaxLayer offset={4} factor={1} speed={.5} className="bg-rose-16">
+        <ParallaxLayer offset={4} factor={1} speed={.5} className="">
         <h1 className="flex justify-center pt-10 pb-2 text-5xl font-bold text-neutral-711">
             Wrap Up
           </h1>

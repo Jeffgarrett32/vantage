@@ -55,8 +55,9 @@ module.exports = {
       },
       fontFamily: {
         'sans': ['IBM Plex Sans', ...defaultTheme.fontFamily.sans],
+        'mono': ['IBM Plex Mono', ...defaultTheme.fontFamily.mono],
         ibm: "'IBM Plex Sans', sans-serif",
-        jetbrains: "'IBM Plex Mono', monospace",
+        jetbrains: "monospace",
       },
     },
   },

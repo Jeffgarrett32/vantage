@@ -52,14 +52,14 @@ function FlipCard() {
 
     return (
         <div id='flipcard' className="flex justify-center p-4">
-        <div className={`grid grid-flow-row grid-cols-1 bg-amber-32 border border-black rounded-sm lg:w-3/6 w-4/6  justify-self-end pt-4 px-4 pb-2 ${flip ? "card flip front" : "card back"} `} >
+        <div className={`grid grid-flow-row grid-cols-1 bg-amber-32 border border-black rounded-md lg:w-3/6 w-4/6  justify-self-end pt-4 px-4 pb-2 ${flip ? "card flip front" : "card back"} `} >
         
         <div id="questionSide" className=''>
-        <div id="question" className='grid grid-flow-row grid-cols-1 bg-neutral-100 border border-black rounded-t-md p-5 text-black text-md font-jetbrains justify-items-start mb-4'>
+        <div id="question" className='grid grid-flow-row grid-cols-1 bg-neutral-100 border border-black rounded-t-md p-5 text-black text-md font-mono justify-items-start mb-4'>
         <p className=''>{questions[currentQuestion].questionText}</p>
         </div>
         
-        <div id="answers" className='grid grid-flow-row grid-cols-1 bg-neutral-100 border border-black rounded-b-md p-5 text-black text-md font-jetbrains justify-items-start'>
+        <div id="answers" className='grid grid-flow-row grid-cols-1 bg-neutral-100 border border-black rounded-b-md p-5 text-black text-md font-mono justify-items-start'>
         
         <div className='form-check row-span-1 py-2'>
         <input className="form-check-input appearance-none rounded-full h-4 w-4 border border-black bg-white text-amber-32 checked:bg-white checked:border-black focus:ring-neutral-800 transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-3 cursor-pointer" type="radio" value={questions[currentQuestion].answerOptions[0].isCorrect}></input>
@@ -93,9 +93,9 @@ function FlipCard() {
         </div>
       </div>
       <div id="explainSide" className='card back bg-amber-32 w-full h-full'> 
-      <div id="" className='bg-neutral-100 border border-black rounded-sm text-black text-md font-jetbrains justify-items-start m-5 rounded-t-md h-80'>
+      <div id="" className='bg-neutral-100 border border-black rounded-sm text-black text-md font-mono justify-items-start m-5 rounded-t-md h-80'>
         
-      <div id="explanation" className='p-4 text-black text-md font-jetbrains justify-items-center mb-4 w-full items-center'>
+      <div id="explanation" className='p-4 text-black text-md font-mono justify-items-center mb-4 w-full items-center'>
         <p className='w-full text-xl pb-4'>Business Email Compromise</p> <p> That&apos;s right! A <span className='underline'>business email compromise</span> is a cyberattack designed to gain access to money or sensitive business information via email fraud. </p>
         </div>
         </div>

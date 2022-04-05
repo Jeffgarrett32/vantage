@@ -25,7 +25,7 @@ function lesson1() {
               What is Social Engineering?{" "}
             </div>
             
-            <div className="col-span-2 grid grid-rows-1 grid-cols-3 justify-self-center text-base font-medium font-jetbrains rounded-md bg-blue-32 border border-black py-4 px-4 w-4/6">
+            <div className="col-span-2 grid grid-rows-1 grid-cols-3 justify-self-center text-base font-medium font-mono rounded-md bg-blue-32 border border-black py-4 px-4 w-4/6">
               <div className="col-span-3 bg-neutral-100 border border-black rounded-md p-5 text-black">
                 {" "}
                 <p>
@@ -45,7 +45,7 @@ function lesson1() {
               Phishing by the numbers
             </div>
             <div className="row-span-1 col-span-1 grid grid-rows-1 grid-cols-3 bg-yellow-32 border border-black rounded-sm w-4/6 justify-self-end p-4 h-full min-h-64">
-              <div className='col-span-3 bg-neutral-100 border border-black rounded-md p-5 text-black font-jetbrains'>
+              <div className='col-span-3 bg-neutral-100 border border-black rounded-md p-5 text-black font-mono'>
               <p><span className="font-bold"><CountUpAnimation duration={1200}>96</CountUpAnimation>%</span> of phishing attacks emerged
               from email.</p>
               <br></br>
@@ -58,7 +58,7 @@ function lesson1() {
               
             <div className="row-span-2 col-span-1 grid grid-rows-1 grid-cols-3 bg-amber-32 border border-black rounded-sm w-4/6 justify-self-start p-4 h-full min-h-64">
               
-              <div className='col-span-3 bg-neutral-100 border border-black rounded-md p-5 text-black font-jetbrains'>
+              <div className='col-span-3 bg-neutral-100 border border-black rounded-md p-5 text-black font-mono'>
                   <p> 
                     Installing ransomware is a popular goal of phishing campaigns.</p>
                     <br></br> 
@@ -73,7 +73,7 @@ function lesson1() {
 
 
             <div className="row-span-1 col-span-1 grid grid-rows-1 grid-cols-3 bg-blue-32 border border-black rounded-sm w-4/6 justify-self-end p-4 h-full">
-              <div className='col-span-3 bg-neutral-100 border border-black rounded-md p-5 text-black font-jetbrains'>
+              <div className='col-span-3 bg-neutral-100 border border-black rounded-md p-5 text-black font-mono'>
               <p> The average user has more than
               <span className='font-bold'> <CountUpAnimation duration={800}> 90</CountUpAnimation></span> online accounts.</p>
                     <br></br> 
@@ -87,7 +87,7 @@ function lesson1() {
 
 
             <div className="row-span-1 col-span-2 grid grid-rows-1 grid-cols-3 bg-rose-32 border border-black rounded-sm w-4/6 justify-self-center p-4 h-full">
-              <div className='col-span-3 bg-neutral-100 border border-black rounded-md p-5 text-black font-jetbrains'>
+              <div className='col-span-3 bg-neutral-100 border border-black rounded-md p-5 text-black font-mono'>
               <p> 
               It takes approximately <span className='font-bold'><CountUpAnimation duration={1200}>250</CountUpAnimation> days</span> to detect breaches resulting from compromised user credentials.</p>
                     <br></br> 
@@ -102,7 +102,7 @@ function lesson1() {
               Phishing techniques
             </div>
 
-            <div className=" col-span-2 grid grid-rows-1 grid-cols-3 justify-self-center text-base font-medium font-jetbrains rounded-md bg-amber-32 border border-black p-4 w-4/6 h-64">
+            <div className=" col-span-2 grid grid-rows-1 grid-cols-3 justify-self-center text-base font-medium font-mono rounded-md bg-amber-32 border border-black p-4 w-4/6 h-64">
               <div className="col-span-3 bg-neutral-100 border border-black rounded-md p-5 text-black">
                 {" "}
                 As attackers grow more sophisticated, it can be difficult to spot the difference between a hoax and the real thing. Here are some of the most common social engineering schemes in use today.

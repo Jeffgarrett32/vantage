@@ -25,7 +25,7 @@ function Carousel() {
         
         >
             <div id="card1" className='px-2'>
-            <div className="grid grid-rows-1 grid-cols-3 justify-self-center text-base font-medium font-jetbrains rounded-md bg-yellow-32 border border-black py-4 px-4 h-96">
+            <div className="grid grid-rows-1 grid-cols-3 justify-self-center text-base font-medium font-mono rounded-md bg-yellow-32 border border-black py-4 px-4 h-96">
               <div className="col-span-3 bg-neutral-100 border border-black rounded-md p-5 text-black">
                 {" "}
                 <p>
@@ -42,7 +42,7 @@ function Carousel() {
             </div>
             </div>
             <div id="card2" className='px-2'>
-            <div className="grid grid-rows-1 grid-cols-3 justify-self-center text-base font-medium font-jetbrains rounded-md bg-yellow-32 border border-black py-4 px-4 h-96">
+            <div className="grid grid-rows-1 grid-cols-3 justify-self-center text-base font-medium font-mono rounded-md bg-yellow-32 border border-black py-4 px-4 h-96">
               <div className="col-span-3 bg-neutral-100 border border-black rounded-md p-5 text-black">
                 {" "}
                 <p>
@@ -56,7 +56,7 @@ function Carousel() {
             </div>
             </div>
             <div id="card3" className='px-2'>
-            <div className="grid grid-rows-1 grid-cols-3 justify-self-center text-base font-medium font-jetbrains rounded-md bg-yellow-32 border border-black py-4 px-4 h-96">
+            <div className="grid grid-rows-1 grid-cols-3 justify-self-center text-base font-medium font-mono rounded-md bg-yellow-32 border border-black py-4 px-4 h-96">
               <div className="col-span-3 bg-neutral-100 border border-black rounded-md p-5 text-black">
                 {" "}
                 <p>
@@ -70,7 +70,7 @@ function Carousel() {
             </div>
             </div>
             <div id="card2" className='px-2'>
-            <div className="grid grid-rows-1 grid-cols-3 justify-self-center text-base font-medium font-jetbrains rounded-md bg-yellow-32 border border-black py-4 px-4 h-96">
+            <div className="grid grid-rows-1 grid-cols-3 justify-self-center text-base font-medium font-mono rounded-md bg-yellow-32 border border-black py-4 px-4 h-96">
               <div className="col-span-3 bg-neutral-100 border border-black rounded-md p-5 text-black">
                 {" "}
                 <p>
