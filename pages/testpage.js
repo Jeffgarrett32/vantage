@@ -7,10 +7,13 @@ import { useSpring, animated } from '@react-spring/web'
 import SpringTest from '../components/SpringTest'
 import DemoIntro from '../components/DemoIntro'
 import SpringCarousel from '../components/SpringCarousel'
+import Lottie from "lottie-react";
+import dataAnimation from '../lotties/drag.json'
 
 function testpage() {
     return (
      <div className='flex items-center justify-center w-screen h-screen overflow-hidden'>
+        
         <SpringCarousel/>
      </div>
      
