@@ -27,12 +27,12 @@ function SpringCarousel() {
             <div className="flex w-full justify-center items-center">
               <div className="flex flex-col items-center justify-center w-5/12 h-80 bg-yellow-32 rounded-md px-4 border border-black">
                 <div className="relative inset-0 w-full bg-neutral-100 py-8 rounded-md border border-black ">
-                  <div className="flex flex-col font-bold text-2xl">
-                    <p className="flex justify-center">
+                  <div className="flex flex-col text-2xl">
+                    <p className="flex justify-center font-mono">
                       Earn a score based on speed and accuracy.
                     </p>{" "}
                     <br></br>
-                    <p className="flex py-2 pb-5 justify-center">
+                    <p className="flex py-2 pb-5 justify-center font-mono">
                       {" "}
                       Swipe to begin!
                     </p>

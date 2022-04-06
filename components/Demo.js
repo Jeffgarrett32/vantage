@@ -24,13 +24,13 @@ function Demo() {
         </ParallaxLayer>
         
         
-        <ParallaxLayer ref={caseRef} offset={1} factor={1.1} speed={.5} className="justify-center "
+        <ParallaxLayer ref={caseRef} offset={1} factor={1.2} speed={.5} className="justify-center "
         >
           <h1 className="flex justify-center pt-10 pb-2 text-5xl font-bold text-neutral-711">
             Real World Case Studies
           </h1>
           <GraphToggle />
-          <div className='flex absolute inset-x-0 bottom-[85px] w-full justify-center space-x-5 '>
+          <div className='flex absolute inset-x-0 bottom-[50px] w-full justify-center space-x-5 '>
           <button onClick={() => caseRef.current.scrollTo(0)} className= 'font-bold bg-neutral-100 p-3 w-1/6 rounded-md border border-black transition-colors duration-500 transform inline hover:bg-neutral-700  hover:text-white focus:shadow-lg hover:shadow-md text-center scale-105' type="submit"> Previous
     </button>
     <button onClick={() => caseRef.current.scrollTo(2)} className= 'font-bold bg-neutral-100 p-3 w-1/6 rounded-md border border-black transition-colors duration-500 transform inline hover:bg-neutral-700  hover:text-white focus:shadow-lg hover:shadow-md text-center scale-105' type="submit"> Next
@@ -42,7 +42,7 @@ function Demo() {
             Phishing Techniques
           </h1>
           <div className='flex justify-center pt-10'>
-            <div className="grid grid-rows-1 grid-cols-3 justify-self-center text-lg font-medium font-mono rounded-md bg-yellow-32 border border-black p-4 w-4/6 h-48">
+            <div className="grid grid-rows-1 grid-cols-3 justify-self-center text-xl font-mono rounded-md bg-yellow-32 border border-black p-4 w-4/6 h-48">
               <div className="col-span-3 bg-neutral-100 border border-black rounded-md p-5 text-black">
                 {" "}
                 As attackers grow more sophisticated, it can be difficult to

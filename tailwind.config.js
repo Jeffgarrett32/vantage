@@ -29,7 +29,7 @@ module.exports = {
         },
         yellow: {
           16: '#FFF4CD',
-          32: '#FFDE67',
+          32: '#F3CA40',
         },
         stone: {
           32: '#D3D0CB',

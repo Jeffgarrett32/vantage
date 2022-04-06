@@ -99,13 +99,17 @@ function GraphToggle() {
         <div>
         <div className='flex w-full h-90 justify-center items-start' >
          
-        <div className={`${showBar ?  'w-8/12 p-5 pb-12' : 'hidden pb-12'} `}>
+        <div className={`${showBar ?  'w-8/12 p-5 pb-12 justify-center' : 'hidden pb-12'} `}>
+           <animated.div style={secondBlock} className='flex flex-col mx-14 justify-self-center h-32 p-5 w-full font-mono text-lg'> <p>As organizations continue to work remotely, dependance on email has risen significantly.</p><br></br><p>Additionally, as cybercriminal activity has matured and scaled, phishing has become a considerable threat to information security at a personal and organizational level.</p>
+           </animated.div>
            <BarChart/>
            </div>
         </div>
         <div className='flex w-full h-90 justify-center items-start' >
          
         <div className={`${showPie ?  'w-8/12 p-5 pb-12' : 'hidden pb-12'} `}>
+        <animated.div style={secondBlock} className='flex flex-col mx-14 justify-self-center h-32 p-5 w-full font-mono text-lg'> <p>Cisco&apos;s survey found that smaller and underequipped organizations struggle to respond to security incidents. This lesson, along with others, will help heighten security awareness and improve decision-making when you need it most.</p>
+           </animated.div>
            <LineChart/>
            </div>
         </div>
@@ -113,6 +117,8 @@ function GraphToggle() {
         <div className='flex w-full h-90 justify-center items-start' >
          
          <div className={`${showDonut ?  'w-4/12 px-5 pb-12' : 'hidden pb-12'} `}>
+         <animated.div style={secondBlock} className='flex flex-col justify-self-center h-32 p-5 pt-6 w-full font-mono text-lg'> <p>Ransomware, a common objective of phishing campaigns, can be incredibly costly. 31% of 2021&apos;s ransomware victims were organizations earning less than $10 million in revenue.</p>
+           </animated.div>
             <DonutChart />
             </div>
          </div>
@@ -126,3 +132,4 @@ function GraphToggle() {
 }
 
 export default GraphToggle
+
