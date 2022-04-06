@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import Image from 'next/Image';
+import Image from 'next/image';
 import CountUpAnimation from './CountUpAnimation';
 import { animated, useChain, useSpring, useSpringRef } from "@react-spring/web";
 
