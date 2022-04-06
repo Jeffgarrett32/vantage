@@ -2,7 +2,6 @@ import React from 'react'
 import Image from 'next/Image';
 import CountUpAnimation from '../components/CountUpAnimation';
 import DonutChart from '../components/DonutChart';
-import Carousel from '../components/Carousel';
 import Flipcard from '../components/Flipcard';
 import Navlesson from '../components/Navlesson';
 import GraphToggle from '../components/GraphToggle';
@@ -112,7 +111,7 @@ function lesson1() {
             </div>
             <div className='col-span-2 flex justify-center pb-10'>
             <div className='px-5'><Image className="" src="/hackerCat.png" alt="arthere" width="300" height="300"/></div>
-              <Carousel className=''/>
+            
             </div>
             <div className='col-span-2'>
             
