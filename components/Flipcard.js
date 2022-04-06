@@ -51,7 +51,7 @@ function FlipCard() {
   }
 
     return (
-        <div id='flipcard' className="flex justify-center p-4">
+        <div id='flipcard' className="flex justify-center pb-8">
         <div className={`grid grid-flow-row grid-cols-1 bg-amber-32 border border-black rounded-md lg:w-3/6 w-4/6  justify-self-end pt-4 px-4 pb-2 ${flip ? "card flip front" : "card back"} `} >
         
         <div id="questionSide" className=''>

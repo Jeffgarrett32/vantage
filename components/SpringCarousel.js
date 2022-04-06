@@ -5,10 +5,14 @@ import Lottie from "lottie-react";
 import dataAnimation from '../lotties/drag.json'
 import rightArrow from '../lotties/rightArrow.json'
 import leftArrow from '../lotties/leftArrow.json'
+import checkmark from '../lotties/checkmark.json'
 
 function SpringCarousel() {
   const style = {
       height: 50
+  }
+  const style1 = {
+      height: 250
   }
   const loop = {
       Type: 'Boolean',
@@ -70,7 +74,7 @@ function SpringCarousel() {
         {
             id: "item-5",
             renderItem: <div className='font-bold text-2xl flex items-center justify-center w-full'>
-                (Reward given here)
+                 <Lottie animationData={checkmark} loop={loop} style={style1} />
             </div>,
           }
       ],
@@ -78,20 +82,34 @@ function SpringCarousel() {
  
  
     return (
-    <div className='py-10 ml-5 items-center justify-center'>
-    {carouselFragment}
-    <div className='flex justify-center'>
-    <div className='flex w-1/5 p-4 justify-center bg-yellow-32 border border-black rounded-md'>
-    <div className='relative inset-0 w-full border border-black rounded-md bg-neutral-100'>
-    <div className='flex justify-around'>
-    <button onClick={slideToPrevItem}><Lottie className="hover:drop-shadow hover:translate-y-[1px]" animationData={leftArrow} style={style} autoplay={false}/></button>
-    <button onClick={slideToNextItem}><Lottie className="hover:drop-shadow hover:translate-y-[1px]" animationData={rightArrow} style={style} autoplay={false}
-                       /></button> </div>
-    </div>
-    </div>
-    </div>
-    </div>
-  )
+      <div className="py-10 ml-5 items-center justify-center">
+        {carouselFragment}
+        <div className="flex justify-center">
+          <div className="flex w-1/5 p-4 justify-center bg-yellow-32 border border-black rounded-md">
+            <div className="relative inset-0 w-full border border-black rounded-md bg-neutral-100">
+              <div className="flex justify-around">
+                <button onClick={slideToPrevItem}>
+                  <Lottie
+                    className="hover:drop-shadow hover:translate-y-[1px]"
+                    animationData={leftArrow}
+                    style={style}
+                    autoplay={false}
+                  />
+                </button>
+                <button onClick={slideToNextItem}>
+                  <Lottie
+                    className="hover:drop-shadow hover:translate-y-[1px]"
+                    animationData={rightArrow}
+                    style={style}
+                    autoplay={false}
+                  />
+                </button>{" "}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
 }
 
 export default SpringCarousel

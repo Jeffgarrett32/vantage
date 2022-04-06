@@ -2,7 +2,7 @@ import {React, useState} from 'react'
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import Image from 'next/Image';
 
 function Carousel() {
   
@@ -35,6 +35,7 @@ function Carousel() {
                 <p>
                     Click the arrow, drag the card, or use the arrow keys to see some examples.
                 </p>
+                <Image src="/malware.png" width={600} height={300} alt="comic" />
                 <div className='flex justify-center items-center'>
                 
                 </div>

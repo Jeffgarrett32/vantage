@@ -9,12 +9,18 @@ import DemoIntro from '../components/DemoIntro'
 import SpringCarousel from '../components/SpringCarousel'
 import Lottie from "lottie-react";
 import dataAnimation from '../lotties/drag.json'
+import Slide from '../components/Slide'
+import ComicStrip from '../components/ComicStrip'
 
-function testpage() {
+const slidePage = {
+  header: "there is only room for one of us.",
+  content: "not a suprise, seeing you here."
+}
+
+function testpage({header, content}) {
     return (
-     <div className='flex items-center justify-center w-screen h-screen overflow-hidden'>
-        
-        <SpringCarousel/>
+     <div>
+       <ComicStrip/>
      </div>
      
   )

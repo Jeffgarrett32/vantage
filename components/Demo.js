@@ -7,6 +7,7 @@ import FlipCard from '../components/Flipcard'
 import DemoIntro from '../components/DemoIntro'
 import Button from '../components/Button';
 import SpringCarousel from './SpringCarousel'
+import ComicStrip from './ComicStrip'
 
 function Demo() {
   const caseRef = useRef(null) 
@@ -41,7 +42,7 @@ function Demo() {
           <h1 className="flex justify-center pt-10 pb-2 text-5xl font-bold text-neutral-711">
             Phishing Techniques
           </h1>
-          <div className='flex justify-center pt-10'>
+          {/* <div className='flex justify-center pt-10'>
             <div className="grid grid-rows-1 grid-cols-3 justify-self-center text-xl font-mono rounded-md bg-yellow-32 border border-black p-4 w-4/6 h-48">
               <div className="col-span-3 bg-neutral-100 border border-black rounded-md p-5 text-black">
                 {" "}
@@ -50,9 +51,9 @@ function Demo() {
                 some of the most common social engineering schemes in use today.
               </div>
             </div>
-          </div>
-          <div className='flex justify-center py-10'>
-          <Carousel/>
+          </div> */}
+          <div className='flex justify-center h-auto'>
+          <ComicStrip/>
           </div>
           <div className='flex w-full justify-center space-x-5 py-10'>
           <button onClick={() => caseRef.current.scrollTo(1)} className= 'font-bold bg-neutral-100 p-3 w-1/6 rounded-md border border-black transition-colors duration-500 transform inline hover:bg-neutral-700  hover:text-white focus:shadow-lg hover:shadow-md text-center scale-105' type="submit"> Previous
@@ -63,7 +64,7 @@ function Demo() {
         </ParallaxLayer>
         <ParallaxLayer offset={3} factor={1.5} speed={.5} className="">
           
-          <h1 className="flex justify-center pt-10 pb-10 text-5xl font-bold text-neutral-711">
+          <h1 className="flex justify-center pt-10 pb-5 text-5xl font-bold text-neutral-711">
             Pop Quiz!
           </h1>
           <SpringCarousel/>
