@@ -52,11 +52,11 @@ function GraphToggle() {
   });
 
     return (
-        <div className='py-10'>
+        <div className='pt-7 pb-10'>
         <div className='grid grid-cols-3 justify-items-center gap-10 px-14'>
             <animated.div style={ firstBlock }
              className="col-span-1 grid grid-rows-1 grid-cols-3 font-mono rounded-md bg-blue-32 border border-black py-4 px-4 w-full hover:animate-wiggle hover:drop-shadow-md focus:animate-wiggle focus:drop-shadow-md">
-                  <div onClick={() => handleBar()} className="hover:cursor-pointer col-span-3 bg-neutral-100 border border-black rounded-md p-5 text-black">
+                  <div onClick={() => handleBar()} className="hover:cursor-pointer col-span-3 bg-neutral-100 border border-black rounded-md p-5 text-black text-lg">
                     {" "}
                     <p>
                       FBI 2021 Internet Crime Report
@@ -70,7 +70,7 @@ function GraphToggle() {
                 
     
                 <animated.div style={secondBlock}  className="col-span-1 grid grid-rows-1 grid-cols-3  text-base font-medium font-mono rounded-md bg-blue-32 border border-black py-4 px-4 w-full focus:animate-wiggle focus:drop-shadow-md hover:animate-wiggle hover:drop-shadow-md">
-                  <div onClick={() => handlePie()} className="hover:cursor-pointer col-span-3 bg-neutral-100 border border-black rounded-md p-5 text-black">
+                  <div onClick={() => handlePie()} className="hover:cursor-pointer col-span-3 bg-neutral-100 border border-black rounded-md p-5 text-black text-lg">
                     {" "}
                     <p>
                       Cisco&apos;s 2021 Security Outcomes Study
@@ -83,7 +83,7 @@ function GraphToggle() {
                 </animated.div>
     
                 <animated.div style={thirdBlock} className="col-span-1 grid grid-rows-1 grid-cols-3 text-base font-medium font-mono rounded-md bg-blue-32 border border-black py-4 px-4 w-full hover:animate-wiggle hover:drop-shadow-md focus:animate-wiggle focus:drop-shadow-md">
-                  <div onClick={() => handleDonut()} className="hover:cursor-pointer col-span-3 bg-neutral-100 border border-black rounded-md p-5 text-black">
+                  <div onClick={() => handleDonut()} className="hover:cursor-pointer col-span-3 bg-neutral-100 border border-black rounded-md p-5 text-black text-lg">
                     {" "}
                     <p>
                       2021 Anti-Phishing Working Group Report
@@ -96,19 +96,19 @@ function GraphToggle() {
                 </animated.div>
             
         </div>
-        <div>
+        <div className='text-justify'>
         <div className='flex w-full h-90 justify-center items-start' >
          
-        <div className={`${showBar ?  'w-8/12 p-5 pb-12 justify-center' : 'hidden pb-12'} `}>
-           <animated.div style={secondBlock} className='flex flex-col mx-14 justify-self-center h-32 p-5 w-full font-mono text-lg'> <p>As organizations continue to work remotely, dependance on email has risen significantly.</p><br></br><p>Additionally, as cybercriminal activity has matured and scaled, phishing has become a considerable threat to information security at a personal and organizational level.</p>
+        <div className={`${showBar ?  'w-8/12 p-3 pb-12 justify-center' : 'hidden pb-12'} `}>
+           <animated.div style={secondBlock} className='flex flex-col mx-14 justify-self-center h-32 p-5 w-6/8 font-mono text-lg text-justify'> <p>As organizations continue to work remotely, dependance on email for has never been higher. Additionally, as cybercriminal activity has matured and scaled, phishing has become a considerable threat to information security at a personal and organizational level.</p>
            </animated.div>
            <BarChart/>
            </div>
         </div>
         <div className='flex w-full h-90 justify-center items-start' >
          
-        <div className={`${showPie ?  'w-8/12 p-5 pb-12' : 'hidden pb-12'} `}>
-        <animated.div style={secondBlock} className='flex flex-col mx-14 justify-self-center h-32 p-5 w-full font-mono text-lg'> <p>Cisco&apos;s survey found that smaller and underequipped organizations struggle to respond to security incidents. This lesson, along with others, will help heighten security awareness and improve decision-making when you need it most.</p>
+        <div className={`${showPie ?  'w-8/12 p-3 pb-12' : 'hidden pb-12'} `}>
+        <animated.div style={secondBlock} className='flex flex-col mx-14 justify-self-center h-32 p-5 w-6/8 font-mono text-lg text-justify'> <p>Cisco&apos;s survey found that smaller and underequipped organizations struggle to respond to security incidents. This lesson, along with others, will help heighten security awareness and improve decision-making when you need it most.</p>
            </animated.div>
            <LineChart/>
            </div>
@@ -116,8 +116,8 @@ function GraphToggle() {
 
         <div className='flex w-full h-90 justify-center items-start' >
          
-         <div className={`${showDonut ?  'w-4/12 px-5 pb-12' : 'hidden pb-12'} `}>
-         <animated.div style={secondBlock} className='flex flex-col justify-self-center h-32 p-5 pt-6 w-full font-mono text-lg'> <p>Ransomware, a common objective of phishing campaigns, can be incredibly costly. 31% of 2021&apos;s ransomware victims were organizations earning less than $10 million in revenue.</p>
+         <div className={`${showDonut ?  'w-8/12 p-3 pb-12' : 'hidden pb-12'} `}>
+         <animated.div style={secondBlock} className='flex flex-col mx-14 justify-self-center min-h-32 p-5 pt-6 w-6/8 font-mono text-lg text-justify'> <p>Ransomware, a common objective of phishing campaigns, can be incredibly costly. 31% of 2021&apos;s ransomware victims were organizations earning less than $10 million in revenue.</p>
            </animated.div>
             <DonutChart />
             </div>

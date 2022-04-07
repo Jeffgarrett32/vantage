@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import Navlesson from '../components/Navlesson'
 import styles from '../styles/Home.module.css'
 

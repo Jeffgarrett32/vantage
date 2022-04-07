@@ -29,7 +29,7 @@ function SpringCarousel() {
           id: "item-1",
           renderItem: (
             <div className="flex w-full justify-center items-center">
-              <div className="flex flex-col items-center justify-center w-5/12 h-80 bg-yellow-32 rounded-md px-4 border border-black">
+              <div className="flex flex-col items-center justify-center w-5/12 h-80 bg-amber-32 rounded-md px-4 border border-black">
                 <div className="relative inset-0 w-full bg-neutral-100 py-8 rounded-md border border-black ">
                   <div className="flex flex-col text-2xl">
                     <p className="flex justify-center font-mono">
@@ -86,8 +86,8 @@ function SpringCarousel() {
         {carouselFragment}
         <div className="flex justify-center">
           <div className="flex w-1/5 p-4 justify-center bg-yellow-32 border border-black rounded-md">
-            <div className="relative inset-0 w-full border border-black rounded-md bg-neutral-100">
-              <div className="flex justify-around">
+          <div className="flex w-full border border-black rounded-md bg-neutral-100">
+              <div className="flex w-1/2 justify-start pl-2">
                 <button onClick={slideToPrevItem}>
                   <Lottie
                     className="hover:drop-shadow hover:translate-y-[1px]"
@@ -96,6 +96,8 @@ function SpringCarousel() {
                     autoplay={false}
                   />
                 </button>
+                </div>
+                <div className='flex w-1/2 justify-end pr-2'>
                 <button onClick={slideToNextItem}>
                   <Lottie
                     className="hover:drop-shadow hover:translate-y-[1px]"

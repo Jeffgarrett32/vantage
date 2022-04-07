@@ -20,14 +20,14 @@ function DemoIntro() {
   const secondBlock = useSpring({
     from: {x: 1800},
     to: {x: 0},
-    delay: 1200,
+    delay: 1500,
     config: { mass: 1.3 }
   });
 
   const thirdBlock = useSpring({
     from: {x: 1800},
     to: {x: 0},
-    delay: 500,
+    delay: 1300,
     config: { mass: 1.5 }
   });
 
@@ -57,7 +57,7 @@ function DemoIntro() {
         <animated.div
         style={ secondBlock } className="row-span-2 col-span-1 grid grid-rows-2 grid-cols-2 bg-amber-32 border border-black rounded-md w-5/6 justify-self-start p-4 h-full min-h-64">
           
-          <div id="tl" className='col-span-1 row-start-1 row-end-1 bg-neutral-100 border border-t-black border-l-black rounded-tl-md p-5 text-black font-mono'>
+          <div id="tl" className='col-span-1 row-start-1 row-end-1 bg-neutral-100 border-t border-l border-t-black border-l-black rounded-tl-md p-5 text-black font-mono'>
               <div className='flex items-center justify-center font-bold text-lg pb-5'>
                 Level 8
               </div>
@@ -70,7 +70,7 @@ function DemoIntro() {
               </div>
                 
           </div>
-          <div id="tr" className='col-span-1 row-start-1 row-end-1 bg-neutral-100 border border-r-black border-t-black rounded-tr-md p-5 text-black font-mono'>
+          <div id="tr" className='col-span-1 row-start-1 row-end-1 bg-neutral-100 border-r border-t border-r-black border-t-black rounded-tr-md p-5 text-black font-mono'>
           <div className='flex items-center justify-center font-bold text-lg pb-5'>
                 Lesson Rewards
               </div>
@@ -82,7 +82,7 @@ function DemoIntro() {
                5 Cards, 1 super rare
               </div>
           </div>
-          <div id="bl" className='col-span-1 row-start-2 row-end-2 bg-neutral-100 border border-l-black border-b-black rounded-bl-md p-5 text-black font-mono'>
+          <div id="bl" className='col-span-1 row-start-2 row-end-2 bg-neutral-100 border-l border-b border-l-black border-b-black rounded-bl-md p-5 text-black font-mono'>
           <div className='flex items-center justify-center font-bold text-lg pb-4'>
                 Earn a 100% score
               </div>
@@ -94,7 +94,7 @@ function DemoIntro() {
                to take a spin!
               </div>
           </div>
-          <div id="br" className='col-span-1 row-start-2 row-end-2 bg-neutral-100 border border-r-black border-b-black rounded-br-md p-5 text-black font-mono'>
+          <div id="br" className='col-span-1 row-start-2 row-end-2 bg-neutral-100 border-r border-b border-r-black border-b-black rounded-br-md p-5 text-black font-mono'>
           <div className='flex items-center justify-center font-bold text-lg pb-4'>
                 Earn volt tokens
               </div>
@@ -116,7 +116,7 @@ function DemoIntro() {
           <p className='font-bold pb-4 p-2 text-lg'> The high score holder for this lesson: </p>
           <div className='flex justify-start items-center border bg-blue-16 border-black rounded-lg px-6 p-2'><Image className="" src="/highscore.svg" height={100} width={100} alt={'yep'}/> 
           <p className='pl-4 text-lg font-bold'>Julia S.</p><br></br> <div className='flex font-bold text-lg ml-14 p-2 w-1/3 justify-center border border-black bg-neutral-100 rounded-lg'>Score: <CountUpAnimation duration={800}>1255</CountUpAnimation></div></div>
-          <button className='flex justify-center items-center border bg-blue-16 border-black rounded-lg px-6 py-2 w-5/12 mt-4'>View leaderboards</button>
+          <button className='flex justify-center items-center font-bold bg-blue-16 font-mono p-3 rounded-md border border-black transition-colors duration-500 transform hover:bg-blue-32 hover:text-blue-16 focus:shadow-lg hover:shadow-md text-center scale-105 px-6 py-2 w-5/12 mt-4'>View leaderboards</button>
           </div>
         </animated.div>
         </div>

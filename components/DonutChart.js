@@ -7,14 +7,23 @@ ChartJS.register(ArcElement, Tooltip, Legend);
 export const options = {
     
   responsive: true,
+  maintainAspectRatio: false,
+
   plugins: {
     legend: {
       display: true,
+      maxWidth: 50,
+      fullSize: false,
+      width:"400",
+      height:"400",
       position: 'top',
-      align: 'start',
+      align: 'center',
     },
     layout: {
       
+    },
+    animations: {
+      animateRotate: true
     },
 
     title: {
@@ -61,7 +70,7 @@ function DonutChart() {
   return (
     <>
     {/* <h1 className='w-full justify-self-center justify-items-center pt-4 font-bold font-sans text-center'>Top Infection Vectors, 2021:</h1> */}
-    <div className='pt-4 row-span-1 justify-center items-center'>
+    <div className='pt-4 w-full h-96 justify-center items-center'>
     
     <Doughnut 
       data={data} options={options}/>

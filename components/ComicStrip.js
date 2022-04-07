@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 import { useSpringCarousel } from 'react-spring-carousel'
 import Lottie from "lottie-react";
 import rightArrow from '../lotties/rightArrow.json'
@@ -13,9 +14,25 @@ import { stringify } from 'postcss';
 
 function ComicStrip() {
 
-const slideContent1 = (<p>As attackers grow more sophisticated, it can be difficult to
+const slideContent1 = (<div>
+    <p>As attackers grow more sophisticated, it can be difficult to
     spot the difference between a hoax and the real thing. Here are
-    some of the most common social engineering schemes in use today.</p>)
+    some of the most common social engineering schemes in use today.</p> <br></br>
+    <div className='flex w-full justify-center px-4'>
+        Social Engineering Psychology
+    </div>
+    <div className='flex w-full justify-center space-x-14 px-4'>
+        <div>
+            Intimidation
+        </div>
+        <div className=''>
+            Urgency
+        </div>
+        <div>
+            Authority
+        </div>
+    </div>
+    </div>)
 
 const diffContent = (<p>
       Attackers frequently make use of email, SMS, and collaboration platforms
@@ -54,7 +71,7 @@ const slideContent3 = (<div>
 const slideContent4 = (
   <div>
     <p>
-      Typosquatting is a technique where attackers register fraudulent domain
+      <span className='font-bold'>Typosquatting</span> is a technique where attackers register fraudulent domain
       names used to pose as a trustworthy website.
       A common strategy is to convince victims that they need to update their
       password on seemingly legitimate websites, thereby gaining the victims
@@ -75,7 +92,7 @@ const slideContent4 = (
         height: 50
     }
     const style1 = {
-        height: 400
+        height: 350
     }
     const style2 = {
         height: 300
@@ -95,7 +112,7 @@ const slideContent4 = (
             id: 'item-1',
             renderItem:(
                 <div className=''>
-                    <Lottie className='flex items-end pt-10' animationData={bearLaptop} loop={loop} style={style1}/>
+                    <Lottie className='flex items-end pt-10 -pb-5' animationData={bearLaptop} loop={loop} style={style1}/>
                     <Slide content={slideContent1}/>
                 </div>
             ),
@@ -112,7 +129,7 @@ const slideContent4 = (
             id: 'item-3',
             renderItem:(
                 <div className='w-full'>
-                    <Lottie className='flex w-full pt-8' animationData={screens} loop={loop} style={style1}/>
+                    <Lottie className='flex w-full' animationData={screens} loop={loop} style={style1}/>
                     <Slide content={slideContent3}/>
                 </div>
             ),
@@ -130,14 +147,14 @@ const slideContent4 = (
 
   return (
       <div>
-      <div className='flex justify-center items-center w-full h-90 pb-5'>
+      <div className='flex justify-center items-center w-full h-auto pb-5'>
           {carouselFragment}
       </div>
-      <div className='flex w-full justify-center items-center'>
+      <div className='flex w-full justify-center items-center '>
     
-    <div className="flex w-1/5 p-4 h-auto justify-center bg-rose-32 border border-black rounded-md">
-            <div className="relative inset-0 w-full border border-black rounded-md bg-neutral-100">
-              <div className="flex justify-around">
+    <div className="flex w-1/5 p-4 h-auto justify-center bg-yellow-32 border border-black rounded-md">
+            <div className="flex w-full border border-black rounded-md bg-neutral-100">
+              <div className="flex w-1/2 justify-start pl-2">
                 <button onClick={slideToPrevItem}>
                   <Lottie
                     className="hover:drop-shadow hover:translate-y-[1px]"
@@ -146,9 +163,11 @@ const slideContent4 = (
                     autoplay={false}
                   />
                 </button>
+                </div>
+                <div className='flex w-1/2 justify-end pr-2'>
                 <button onClick={slideToNextItem}>
                   <Lottie
-                    className="hover:drop-shadow hover:translate-y-[1px] animate-pulse"
+                    className="hover:drop-shadow hover:translate-y-[1px] "
                     animationData={rightArrow}
                     style={style}
                     autoplay={false}
