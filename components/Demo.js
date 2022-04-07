@@ -10,6 +10,7 @@ import ComicStrip from './ComicStrip'
 import Lottie from 'lottie-react';
 import arrowUp from '../lotties/arrowUpCircle.json'
 import arrowDown from '../lotties/arrowDownCircle.json'
+import Explainer from './Explainer'
 
 function Demo() {
   const caseRef = useRef(null) 
@@ -27,7 +28,7 @@ const autoplay = {
 
 
   return (
-    <div className="">
+    <div className="max-w-6xl">
       <Parallax pages={6} ref={caseRef} className="h-full gradient">
         <ParallaxLayer offset={0} factor={1} speed={0.5} className="">
           <Navlesson />
@@ -44,7 +45,7 @@ const autoplay = {
           </div>
         </ParallaxLayer>
         <ParallaxLayer offset={1} speed={0.5} className=" ">
-        <div className="flex justify-center pt-10 text-5xl font-bold text-neutral-711">
+        <div className="flex justify-center py-10 text-5xl font-bold text-neutral-711">
             <button onClick={() => caseRef.current.scrollTo(0)} className="">
               <Lottie
                 className="arrow hover:-translate-y-[1px]"
@@ -62,7 +63,10 @@ const autoplay = {
                 autoplay={false}
               />
               </button>
+              
+              
           </div>
+          <Explainer />
         </ParallaxLayer>
         <ParallaxLayer
           ref={caseRef}
@@ -80,7 +84,7 @@ const autoplay = {
                 autoplay={false}
               />
             </button>
-            <h1 className='flex items-center px-5'>Real World Case Studies</h1>
+            <h1 className='flex items-center px-5'>Social Engineering Techniques</h1>
             <button onClick={() => caseRef.current.scrollTo(3)} className="">
               <Lottie
                 className="arrow hover:translate-y-[1px]"
@@ -90,7 +94,10 @@ const autoplay = {
               />
               </button>
           </div>
-          <GraphToggle />
+          <div className="flex justify-center h-auto cursor-grab active:cursor-grabbing">
+            <ComicStrip />
+            
+          </div>
 
         </ParallaxLayer>
         
@@ -104,7 +111,7 @@ const autoplay = {
                 autoplay={false}
               />
             </button>
-            <h1 className='flex items-center px-5'>Social Engineering Techniques</h1>
+            <h1 className='flex items-center px-5'>Real World Case Studies</h1>
             <button onClick={() => caseRef.current.scrollTo(4)} className="">
               <Lottie
                 className="arrow hover:translate-y-[1px]"
@@ -114,9 +121,7 @@ const autoplay = {
               />
               </button>
           </div>
-          <div className="flex justify-center h-auto">
-            <ComicStrip />
-          </div>
+<GraphToggle />
          
         </ParallaxLayer>
         <ParallaxLayer offset={4} factor={1.5} speed={0.5} className="">
@@ -141,7 +146,9 @@ const autoplay = {
           </div>
           <div className="flex justify-center h-auto">
             </div>
-          <SpringCarousel />
+            <div className='cursor-grab active:cursor-grabbing'>
+          <SpringCarousel/>
+          </div>
         </ParallaxLayer>
         <ParallaxLayer offset={5} factor={1} speed={0.5} className="">
           <h1 className="flex justify-center pt-10 pb-2 text-5xl font-bold text-neutral-711">

@@ -13,7 +13,7 @@ function DemoIntro() {
   const firstBlock = useSpring({
       from: {x: 1800},
       to: {x: 0},
-      delay: 400,
+      delay: 800,
       config: { mass: 1.5 }
   });
 
@@ -27,7 +27,7 @@ function DemoIntro() {
   const thirdBlock = useSpring({
     from: {x: 1800},
     to: {x: 0},
-    delay: 1300,
+    delay: 900,
     config: { mass: 1.5 }
   });
 
@@ -45,7 +45,7 @@ function DemoIntro() {
           
       <animated.div
         style={ firstBlock } className="row-span-1 col-span-1 grid grid-rows-1 grid-cols-3 bg-yellow-32 border border-black rounded-md w-5/6 justify-self-end p-4 h-full min-h-64">
-          <div className='col-span-3 bg-neutral-100 border border-black rounded-md p-5 text-black font-mono'>
+          <div className='col-span-3 bg-neutral-100 border border-black rounded-md p-5 text-black text-xl font-mono'>
         <p><span className='font-bold text-lg'>Social Engineering</span> is the act of tricking individuals into divulging their sensitive information for malicious purposes.</p>
           <br></br>
           <p> Social Engineering is the most popular tactic attackers use to gain access to sensitive networks.</p>
@@ -58,8 +58,10 @@ function DemoIntro() {
         style={ secondBlock } className="row-span-2 col-span-1 grid grid-rows-2 grid-cols-2 bg-amber-32 border border-black rounded-md w-5/6 justify-self-start p-4 h-full min-h-64">
           
           <div id="tl" className='col-span-1 row-start-1 row-end-1 bg-neutral-100 border-t border-l border-t-black border-l-black rounded-tl-md p-5 text-black font-mono'>
-              <div className='flex items-center justify-center font-bold text-lg pb-5'>
+          <div className='flex justify-center pb-3'>
+          <div className='flex items-center justify-center font-bold text-xl p-2 w-3/4  rounded-lg border border-black'>
                 Level 8
+              </div>
               </div>
               <div className='flex justify-center items-end h-3/5 '>
                 <Image src='/battery.svg' width={150} height={150} alt='battery'/>
@@ -71,8 +73,10 @@ function DemoIntro() {
                 
           </div>
           <div id="tr" className='col-span-1 row-start-1 row-end-1 bg-neutral-100 border-r border-t border-r-black border-t-black rounded-tr-md p-5 text-black font-mono'>
-          <div className='flex items-center justify-center font-bold text-lg pb-5'>
-                Lesson Rewards
+          <div className='flex justify-center pb-3'>
+          <div className='flex items-center justify-center font-bold text-xl p-2 w-3/4 rounded-lg border border-black'>
+                Lesson Reward
+              </div>
               </div>
               <div className='flex justify-center items-end h-3/5 '>
                 <Image src='/cards.png' width={150} height={150} alt='battery'/>
@@ -83,8 +87,10 @@ function DemoIntro() {
               </div>
           </div>
           <div id="bl" className='col-span-1 row-start-2 row-end-2 bg-neutral-100 border-l border-b border-l-black border-b-black rounded-bl-md p-5 text-black font-mono'>
-          <div className='flex items-center justify-center font-bold text-lg pb-4'>
+          <div className='flex justify-center'>
+          <div className='flex items-center justify-center font-bold text-xl text-center p-2 px-3 w-auto rounded-lg border border-black'>
                 Earn a 100% score
+              </div>
               </div>
               <div className='flex justify-center items-end h-3/5 '>
                 <Image src='/slots.svg' width={150} height={150} alt='battery'/>
@@ -95,10 +101,12 @@ function DemoIntro() {
               </div>
           </div>
           <div id="br" className='col-span-1 row-start-2 row-end-2 bg-neutral-100 border-r border-b border-r-black border-b-black rounded-br-md p-5 text-black font-mono'>
-          <div className='flex items-center justify-center font-bold text-lg pb-4'>
+          <div className='flex justify-center'>
+          <div className='flex items-center justify-center font-bold text-xl text-center p-2 w-3/4 rounded-lg border border-black'>
                 Earn volt tokens
               </div>
-              <div className='flex justify-center items-center pb-2 h-3/5'>
+              </div>
+              <div className='flex justify-center items-center h-3/5 translate-y-4'>
                 <Image src='/btokens.svg' width={125} height={125} alt='battery'/>
                 
               </div>
